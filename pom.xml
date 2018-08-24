@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.erik-company</groupId>
-	<artifactId>meu-segundo-projeto-springboot-github</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-
-	<name>MeuSegundoProjetoSpringBoot-Com-GitHub</name>
+	<name>MeuSegundoProjetoSpringBoot-Com-GitHub</name> <!-- Nome do Projeto -->
 	<description>Projeto Exemplo criado com a opção &quot;Spring Starter Project&quot; e conectado a um repositorio no GitHub.</description>
+	
+	<groupId>com.erik-company</groupId>                            <!-- Site da empresa ou pessoa dona da aplicação -->
+	<artifactId>meu-segundo-projeto-springboot-github</artifactId> <!-- O nome do arquivo final da aplicação após fazer o build do projeto -->
+	<version>0.0.1-SNAPSHOT</version>                              <!--Versao do projeto -->
+	<packaging>jar</packaging>                                     <!-- Tipo do projeto, ou seja, o que vai ser gerado quando eu terminar o projeto e fazer o build -->
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.4.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,31 +21,47 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	
+	<parent> <!-- Dependencia pai Spring Boot (Eh essa dependencia que faz o Spring Boot funcionar e tals) -->
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+
 	<dependencies>
-		<dependency>
+
+		<dependency> <!-- Subdependencia do Spring Boot Pai -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
-		<dependency>
+		<dependency> <!-- Subdependencia do Spring Boot Pai -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+
+		<dependency> <!-- Subdependencia do Spring Boot Pai -->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
+
 		<plugins>
-			<plugin>
+
+			<plugin> <!-- Subdependencia do Spring Boot Pai -->
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
+
 	</build>
 
 
