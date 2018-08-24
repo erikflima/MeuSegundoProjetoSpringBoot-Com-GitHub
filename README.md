@@ -1,5 +1,5 @@
 # MeuSegundoProjetoSpringBoot-Com-GitHub
-Curso Spring Boot - Guia de Referencia.
+Curso Spring Boot - Guia de Referência.
 
 Projeto que criei para deixar de template.
  -> Criei esse projeto usando o STS, utilizando a opção "File -> new -> Sprint Starter Project".
